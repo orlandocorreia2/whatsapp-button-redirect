@@ -5,7 +5,9 @@
 - In your page insert
 - <link rel="stylesheet" href="./whatsapp-button-redirect/dist/css/styles.css" />
 - <script src="./whatsapp-button-redirect/dist/js/scripts.js"></script>
-- <script>
+
+```
+ <script>
     whatsBtnConfig = {
       ...whatsBtnConfig,
       phone: "5511948108855",
@@ -18,6 +20,7 @@
       text: "Quero fazer um orcamento",
     };
   </script>
+```
 
 ## License
 
