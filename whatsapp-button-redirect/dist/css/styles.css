@@ -1,0 +1,141 @@
+.whatsapp-body {
+  background-image: url("../images/fundo_whats.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 5000px;
+  min-height: 5000px;
+}
+
+.box-whats {
+  position: fixed;
+  right: -300px;
+  bottom: 75px;
+  margin-right: 30px !important;
+  z-index: 9999;
+}
+
+.box-whats:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 25px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 24px solid #f0f0f1;
+  bottom: -24px;
+  left: 80%;
+  z-index: 9999;
+}
+
+.box-whats-header {
+  background-color: #4caf50;
+  padding: 10px;
+  border-radius: 15px 15px 0 0;
+}
+
+.box-whats-header-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.box-whats-header-title {
+  margin-top: 5px;
+  color: #edf5f4;
+  font-weight: bold;
+}
+
+.box-whats-header-small {
+  margin-top: 1px;
+  color: #d6f0ee;
+  font-weight: bolder;
+}
+
+.box-whats-header-close {
+  color: #d6f0ee;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.box-whats-body {
+  margin-top: 0;
+  padding: 20px;
+  background-image: url("../images/fundo_whats.jpg");
+  background-repeat: no-repeat;
+  min-height: 80px;
+}
+
+.box-whats-body-message {
+  background-color: #fff;
+  width: 170px;
+  padding: 3px;
+  border-radius: 0 5px 5px;
+  margin-top: -17px;
+  margin-left: -3px;
+}
+
+.box-whats-body-message-info {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #555;
+}
+
+.box-whats-body-message-time {
+  margin-top: 10px;
+  text-align: right;
+  color: #666;
+}
+
+.box-whats-footer {
+  padding: 10px;
+  background-color: #f0f0f1;
+  display: flex;
+  border-radius: 0 0 15px 15px;
+}
+
+.box-whats-footer-emoj {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.box-whats-footer-input {
+  height: 25px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 15px;
+  cursor: text;
+}
+
+.box-whats-footer-mic {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.img-icon-smiley {
+  content: url("../images/smiley.svg");
+}
+
+.img-icon-mic {
+  content: url("../images/mic.svg");
+}
+
+.img-icon-idea {
+  content: url("../images/idea.svg");
+}
+
+.img-logo-whats-round {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.whats-fixed-icon {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
