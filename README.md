@@ -24,6 +24,10 @@
   </script>
 ```
 
+## Preview
+
+`https://orlandocorreia2.github.io/whatsapp-button-redirect/`
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
