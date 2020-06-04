@@ -3,21 +3,23 @@
 - `git clone https://github.com/orlandocorreia2/whatsapp-button-redirect.git`
 - Copy folder whatsapp-button-redirect to your application folder
 - In your page insert
-- <link rel="stylesheet" href="./whatsapp-button-redirect/dist/css/styles.css" />
-- <script src="./whatsapp-button-redirect/dist/js/scripts.js"></script>
+
+```
+<link rel="stylesheet" href="./whatsapp-button-redirect/dist/css/styles.css" />
+<script src="./whatsapp-button-redirect/dist/js/scripts.js"></script>
+```
 
 ```
  <script>
     whatsBtnConfig = {
       ...whatsBtnConfig,
-      phone: "5511948108855",
-      path: "./whatsapp-button-redirect",
-      logo:
-        "https://orlandocorreia2.github.io/Site-Higienesp/assets/images/logo2-higienesp.png",
-      companyName: "Higienesp",
-      message: "Ola tudo bem",
-      typingHint: "typing...",
-      text: "Quero fazer um orcamento",
+      phone: "<YOUR CELL PHONE> Ex: 5511911111111, This info is required",
+      path: "<PATH OF LIB FOLDER> Ex: ./whatsapp-button-redirect, (Optional)",
+      logo:"<PATH OF YOUR SITE LOGO>, (Optional)",
+      companyName: "<YOUR COMPANY NAME>, (Optional)",
+      message: "<YOUR MESSAGE>, (Optional)",
+      typingHint: "<YOUR TYPING HINT> Ex: typing..., (Optional)",
+      text: "<YOUR MESSAGE TEXT>, (Optional)",
     };
   </script>
 ```
