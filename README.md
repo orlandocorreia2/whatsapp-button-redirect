@@ -26,7 +26,7 @@
 
 ## Preview
 
-`https://orlandocorreia2.github.io/whatsapp-button-redirect/`
+- **[https://orlandocorreia2.github.io/whatsapp-button-redirect/](https://orlandocorreia2.github.io/whatsapp-button-redirect/)**
 
 ## License
 
