@@ -6,7 +6,7 @@ let changeStatusText = false;
 let boxWhatsShowFirst = false;
 
 var whatsBtnConfig = {
-  phone: "",
+  phone: "5511911111111",
   path: "./whatsapp-button-redirect",
   logo: "./whatsapp-button-redirect/dist/images/whatsapp_white.svg",
   companyName: "Whatsup",
@@ -76,13 +76,12 @@ function showBoxWhatsAuto() {
 
 function init() {
   setTimeout(() => {
-    if (whatsBtnConfig.phone) {
-      const body = document.querySelector("body");
+    const body = document.querySelector("body");
 
-      const boxWhats = document.createElement("div");
-      boxWhats.classList.add("box-whats");
+    const boxWhats = document.createElement("div");
+    boxWhats.classList.add("box-whats");
 
-      boxWhats.innerHTML = `<div class="box-whats-header">
+    boxWhats.innerHTML = `<div class="box-whats-header">
                           <div style="display: flex;">
                             <div class="box-whats-header-logo">
                               <img
@@ -146,34 +145,33 @@ function init() {
                             alt="Whatsapp ${whatsBtnConfig.companyName}"
                           /></a>`;
 
-      body.appendChild(boxWhats);
+    body.appendChild(boxWhats);
 
-      window.onscroll = function () {
-        showBoxWhatsAuto();
-      };
+    window.onscroll = function () {
+      showBoxWhatsAuto();
+    };
 
-      document
-        .querySelector(".whats-fixed-icon")
-        .addEventListener("mouseover", function () {
-          slideLeftBoxWhats();
-        });
+    document
+      .querySelector(".whats-fixed-icon")
+      .addEventListener("mouseover", function () {
+        slideLeftBoxWhats();
+      });
 
-      document
-        .querySelector(".box-whats-header-close")
-        .addEventListener("click", function () {
-          slideRightBoxWhats();
-        });
+    document
+      .querySelector(".box-whats-header-close")
+      .addEventListener("click", function () {
+        slideRightBoxWhats();
+      });
 
-      document
-        .querySelector(".box-whats-redirect")
-        .addEventListener("click", function () {
-          document.getElementById("whats-link-redirect").click();
-        });
+    document
+      .querySelector(".box-whats-redirect")
+      .addEventListener("click", function () {
+        document.getElementById("whats-link-redirect").click();
+      });
 
-      document.getElementById("box-whats-body-message-time-now").innerHTML = `${
-        hour < 10 ? `0${hour}` : hour
-      }:${minutes < 10 ? `0${minutes}` : minutes}`;
-    }
+    document.getElementById("box-whats-body-message-time-now").innerHTML = `${
+      hour < 10 ? `0${hour}` : hour
+    }:${minutes < 10 ? `0${minutes}` : minutes}`;
   }, 500);
 }
 
