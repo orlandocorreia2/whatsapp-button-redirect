@@ -141,7 +141,7 @@ function init() {
                           >
                           <img
                             src="${whatsBtnConfig.path}/dist/images/whatsapp.svg"
-                            width="50"
+                            width="100"
                             alt="Whatsapp ${whatsBtnConfig.companyName}"
                           /></a>`;
 
