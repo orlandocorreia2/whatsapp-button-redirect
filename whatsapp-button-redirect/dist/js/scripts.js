@@ -4,6 +4,8 @@ const minutes = date.getMinutes();
 let boxWhatsShow = false;
 let changeStatusText = false;
 let boxWhatsShowFirst = false;
+let timeOutSlideRightBoxWhats = null;
+let timeOutSlideLeftBoxWhats = null;
 
 var whatsBtnConfig = {
   phone: "5511911111111",
@@ -54,7 +56,7 @@ function slideLeftBoxWhats() {
       if (initialRightPosition > -10) {
         clearInterval(interval);
 
-        setTimeout(
+        timeOutSlideRightBoxWhats = setTimeout(
           () => {
             slideRightBoxWhats();
           },
@@ -67,7 +69,7 @@ function slideLeftBoxWhats() {
 
 function showBoxWhatsAuto() {
   if (!boxWhatsShowFirst) {
-    setTimeout(() => {
+    timeOutSlideLeftBoxWhats = setTimeout(() => {
       slideLeftBoxWhats();
       boxWhatsShowFirst = true;
     }, 10000);
@@ -161,6 +163,8 @@ function init() {
       .querySelector(".box-whats-header-close")
       .addEventListener("click", function () {
         slideRightBoxWhats();
+        clearTimeout(timeOutSlideRightBoxWhats);
+        clearTimeout(timeOutSlideLeftBoxWhats);
       });
 
     document
